@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog Perusahaan</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="blog.css">
+    <link href="logo1.png" rel="shortcut icon">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo1.png" alt="Logo">
+            <div class="logo-text">
+                <h1>Barka Darutama</h1>
+                <p>Planner and Supervision Of Building</p>
+            </div>
+        </div>
+        <button class="navbar-toggle">☰</button>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li class="profil"><a style="color: #059212;">Profil</a>
+                <div class="dropdown-content">
+                    <a href="profil.html">Tentang Perusahaan</a>
+                    <a href="struktur.html">Struktur Perusahaan</a>
+                    <a href="pengalaman.html">Pengalaman Kerja</a>
+                </div>  
+            </li>
+            <li><a href="jasa.html">Jasa Layanan</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <div class="navbar-right">
+            <a href="https://wa.me/6281273720988" class="bj">Buat Janji</a>
+        </div>
+    </nav>
+
+
+    <div class="judul">
+        <img src="image3.jpg" alt="Profil Barka Darutama">
+        <div class="text-overlay">
+            <h1>Blog Barka Darutama</h1>
+        </div>
+    </div>
+
+
+
+
+<div class="container1">
+    <h1>Rekam Jejak Barka Darutama</h1>
+    <p>Proyek Pekerjaan Terbaru Kami</p>
+    <div class="categories">
+        <button class="btn-category active" onclick="filterProducts('all')">All</button>
+        <button class="btn-category" onclick="filterProducts('jembatan')">Jembatan</button>
+        <button class="btn-category" onclick="filterProducts('gedung')">Gedung</button>
+        <button class="btn-category" onclick="filterProducts('rumah')">Rumah</button>
+    </div>
+    <div class="products">
+        <div class="product-item card" data-category="jembatan">
+            <img src="image5.jpg">
+            <div class="lokasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                <p>Sidoarjo</p>
+            </div>
+            <h1>Proyek Jasa Kontraktor Jembatan di Sidoarjo</h1>
+        </div>
+
+        <div class="product-item card" data-category="jembatan">
+            <img src="image5.jpg">
+            <div class="lokasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                <p>Kec. Bangil</p>
+            </div>
+            <h1>Proyek Jasa Kontraktor Jembatan di Bangil</h1>
+        </div>
+
+
+        <div class="product-item card" data-category="gedung">
+            <img src="image5.jpg">
+            <div class="lokasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                <p>Kab. Trenggalek</p>
+            </div>
+            <h1>Proyek Jasa Kontraktor Gedung di Trenggalek</h1>
+        </div>
+
+        <div class="product-item card" data-category="gedung">
+            <img src="image5.jpg">
+            <div class="lokasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                <p>Kab. Trenggalek</p>
+            </div>
+            <h1>Proyek Jasa Kontraktor Gedung di Trenggalek</h1>
+        </div>
+
+        <div class="product-item card" data-category="rumah">
+            <img src="image5.jpg">
+            <div class="lokasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                <p>Kec. Bangil</p>
+            </div>
+            <h1>Proyek Jasa Kontraktor Rumah di Bangil</h1>
+        </div>
+        <div class="product-item card" data-category="rumah">
+            <img src="image5.jpg">
+            <div class="lokasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                <p>Kab. Trenggalek</p>
+            </div>
+            <h1>Proyek Jasa Kontraktor Rumah di Trenggalek</h1>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-section">
+
+    <div class="content-footer">
+
+        <div class="sub-content">
+            <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <h1>Alamat</h1>
+            </div>
+            <p>JL. Mayjend Sungkono No. 31-A Ling. Darang 
+                Rt. 06 / Rw. 02 Kel. Tamanan Trenggalek</p>
+        </div>
+
+        <div class="sub-content">
+            <div class="icon">
+            <i class="fas fa-phone"></i>
+            <h1>Telepon</h1>
+            </div>
+            <p>081273720988</p>
+        </div>
+
+        <div class="sub-content">
+            <div class="icon">
+            <i class="far fa-envelope-open"></i>
+            <h1>Email</h1>
+            </div>
+            <p>Barkadarutama@gmail.com</p>
+        </div>
+    </div>
+ 
+</footer>
+
+
+<script>
+    document.querySelector('.navbar-toggle').addEventListener('click', function() {
+  document.querySelector('.navbar-menu').classList.toggle('active');
+});
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

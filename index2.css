@@ -1,0 +1,70 @@
+body{
+    background-color: #001F3F;
+    margin: 200px 100px 100px 100px;
+}
+
+h1{
+    color: #EAD8B1;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.menu{
+    display: flex;
+    gap: 5rem;
+    justify-content:center ;
+    text-align: center;
+}
+
+.login{
+    width: 500px;
+    height: auto;
+}
+
+.register {
+    width: 500px;
+    height: auto;
+}
+
+button{
+    height: 80px;
+    width: 160px;
+    font-size: 30px;
+    background-color: #001F3F;
+    color: #EAD8B1;
+    border: #EAD8B1 2px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #EAD8B1;
+    color: #001F3F;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+}
+
+@media screen and (min-width: 1921px) {
+    
+}

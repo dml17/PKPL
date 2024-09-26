@@ -1,0 +1,1344 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(45deg, #059212 25%, #fff 25%); /* Warna pertama 20%, warna kedua 80% */
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 60px; /* Atur tinggi logo sesuai kebutuhan */
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-text p {
+  margin: 0;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #059212;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-menu li a:hover{
+  border-bottom: 2px solid #059212;
+}
+
+.navbar-right .bj {
+  background-color: #059212;
+  padding: 26px 40px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.navbar-right .bj:hover {
+  background-color: #fff;
+  color: #059212;
+  border-color: #059212;
+  border-style: solid;
+}
+
+.navbar-menu a.active {
+  color: #059212; /* Warna teks saat aktif */
+  font-weight: bold; /* Teks tebal */
+  border-bottom: 2px solid #059212; /* Garis bawah saat aktif */
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.profil:hover .dropdown-content{
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+
+
+.judul {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Atur tinggi sesuai kebutuhan */
+    overflow: hidden; /* Agar gambar yang melebihi tinggi terpotong */
+}
+
+.judul img {
+    image-rendering: auto;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memotong gambar sesuai dengan area elemen */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background semi-transparan */
+    color: white;
+    display: flex;
+    justify-content: center; /* Memusatkan teks secara horizontal */
+    align-items: center; /* Memusatkan teks secara vertikal */
+    text-align: center;
+    border-radius: 5px; /* Opsional: Menambahkan efek melengkung pada sudut */
+}
+
+.text-overlay h1{
+    font-weight: 900;
+}
+
+.content1{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.content1 .text {
+  margin-right: 50px;
+}
+
+.content1 .text h1{
+  font-size: 20px;
+  color: #059212;
+}
+
+.content1 .text h2{
+  margin-top: -5px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+}
+
+.content1 .text p{
+  font-size: 19px;
+}
+
+.content1 img{
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+  image-rendering: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.content2{
+  margin-top: 150px;
+  height: 200px;
+  padding: 20px 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #059212;
+}
+
+.text-visi{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 30px;
+}
+
+.text-visi h1{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.text-visi h2{
+  color: #059212;
+  font-size: 40px;
+  font-weight: bold;
+}
+ .content2 p{
+  font-size: 18px;
+  text-align: start;
+  margin-left: 30px;
+  margin-right: 30px;
+ }
+
+ .content3{
+  margin-top: 100px;
+  height: auto;
+  padding: 20px 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #059212;
+}
+
+.text-misi{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 30px;
+}
+
+.text-misi h1{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.text-misi h2{
+  color: #059212;
+  font-size: 40px;
+  font-weight: bold;
+}
+ .content3 ol li{
+  margin-left:50px;
+  font-size: 18px;
+  margin-right: 50px;
+ }
+
+ .content4{
+  margin-top: 100px;
+  height: auto;
+  padding: 20px 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #059212;
+}
+
+.text-budaya{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 30px;
+}
+
+.text-budaya h1{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.text-budaya h2{
+  color: #059212;
+  font-weight: bold;
+  font-size: 40px;
+}
+ .content4 ol li{
+  margin-left:50px;
+  font-size: 18px;
+  margin-right: 50px
+ }
+
+ .content5{
+  margin-top: 100px;
+  height: 300px;
+  text-align: center;
+  margin-bottom: -150px;
+  position: relative;
+  background-color: #059212;
+ }
+
+
+ /* .content5.text{
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+ } */
+
+ .content5 .text{
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  opacity: 100%;
+  font-weight: bold;
+ }
+
+ .content5 .text h1{
+  font-weight: bold;
+ }
+
+
+.text button {
+  margin-top: 25px;
+  padding: 20px 20px;
+  background-color:#9BEC00;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text button:hover{
+  color: #fff;
+  background-color: #059212; /* Warna saat tombol di-hover */
+  border-color: #fff;
+  border-style: solid;
+  border-width: 3px
+}
+
+
+
+.footer-section{
+  color: #f2f2f2;
+  background-color: #059212;
+  height: 200px;
+}
+
+.content-footer{
+  padding: 20px;
+  margin: 100px 200px 100px 200px;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+
+}
+
+.sub-content{
+  margin-top: 30px;
+  width: 400px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.icon{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icon i{
+  color: #9BEC00;
+  font-size: 30px;
+}
+.icon h1{
+  color: #fff;
+  font-size: 30px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.container{
+  max-width: 1170px;
+  margin:auto;
+  padding:0;
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #059212;
+    padding: 70px 0;
+    margin-top: 150px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #9BEC00;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position below the toggle button */
+      left: 85%;
+      transform: translateX(-50%); /* Centers the menu horizontally */
+      background-color: #fff;
+      width: 150px; /* Adjust width to your needs */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden; /* Hide overflowing content */
+      max-height: 0; /* Set initial height to 0 for animation */
+      transition: max-height 1s ease-out; /* Transition for smooth animation */
+  }
+
+  .navbar-right {
+      display: none;
+  }
+
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(45deg, #059212 65%, #fff 15%);
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+  }
+
+  .navbar-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: #059212;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+      max-height: 300px;
+  }
+
+  /* Menu item container (li) */
+  .navbar-menu li {
+      display: flex; /* Use flexbox to center contents */
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      height: 30px; /* Adjust height to your needs */
+      width: 100%; /* Make sure li takes full width */
+  }
+
+  /* Link styling (a) */
+  .navbar-menu li a {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Horizontally centers text */
+      align-items: center; /* Vertically centers text */
+      width: 80%; /* Makes sure link spans the entire list item */
+      padding: 8px;
+      font-size: 10px;
+      text-align: center;
+      margin-right: 50px;
+  }
+
+
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 30px;
+      height: 30px; /* Atur tinggi logo sesuai kebutuhan */
+      margin-right: 10px;
+      border-radius: 10px;
+  }
+  
+  .logo-text h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+  }
+  
+  .logo-text p {
+      margin: 0;
+      color: #ddd;
+      font-size: 10px;
+  }
+
+  .judul{
+    height: 200px;
+  }
+
+  .judul h1{
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+  .content1{
+    width: 400px;
+    margin: 50px 30px 50px 30px;
+    flex-wrap: wrap;
+  }
+
+  .text{
+    width: 300px;
+  }
+
+  .content1 .text h1{
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .content1 .text h2{
+    font-size: 25px;
+    margin-top: 1px;
+  }
+
+  .content1 .text p{
+    font-size: 15px;
+  }
+
+  .content1 .foto img{
+    width: 300px;
+    height: auto;
+  }
+
+  .content2{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .text-visi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-visi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-visi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content2 p{
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+
+
+
+  .content3{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-misi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-misi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-misi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content4 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content4 ol{
+    margin-left: -40px;
+  }
+
+  
+  .content4{
+    width:300px;
+    margin: auto;
+    height: auto;
+  }
+
+  .text-budaya{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-budaya h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-budaya h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content3 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content3 ol{
+    margin-left: -40px;
+  }
+
+  .content5{
+    margin: auto;
+
+  }
+
+  .content5 h1{
+    font-size: 30px;
+    padding: 0;
+    margin: 0px 0px 50px 50px;
+  }
+
+  .content5 button{
+    margin: 0px 0px 0px 50px;
+  }
+
+  .footer-section{
+    height: auto;
+    margin: auto;
+    padding: 0;
+    width: auto;
+}
+.content-footer{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-content .icon{
+    text-align: center;
+    margin: auto;
+}
+.sub-content{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.icon i{
+    font-size: 20px;
+}
+.icon h1{
+    font-size: 20px;
+}
+
+.sub-content p{
+    font-size: 15px;
+}
+
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+  .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position below the toggle button */
+      left: 85%;
+      transform: translateX(-50%); /* Centers the menu horizontally */
+      background-color: #fff;
+      width: 180px; /* Adjust width to your needs */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden; /* Hide overflowing content */
+      max-height: 0; /* Set initial height to 0 for animation */
+      transition: max-height 1s ease-out; /* Transition for smooth animation */
+  }
+
+  .navbar-right {
+      display: none;
+  }
+
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(50deg, #059212 68%, #fff 65%);
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+  }
+
+  .navbar-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+      color: #059212;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+      max-height: 300px;
+  }
+
+  /* Menu item container (li) */
+  .navbar-menu li {
+      display: flex; /* Use flexbox to center contents */
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      height: 40px; /* Adjust height to your needs */
+      width: 100%; /* Make sure li takes full width */
+  }
+
+  /* Link styling (a) */
+  .navbar-menu li a {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Horizontally centers text */
+      align-items: center; /* Vertically centers text */
+      width: 100%; /* Makes sure link spans the entire list item */
+      padding: 8px;
+      font-size: 15px;
+      text-align: center;
+      margin-right: 50px;
+  }
+
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 50px;
+      height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+      margin-right: 10px;
+      border-radius: 10px;
+  }
+  
+  .logo-text h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+  }
+  
+  .logo-text p {
+      margin: 0;
+      color: #ddd;
+      font-size: 15px;
+      width: 200px;
+  }
+
+  
+  .judul{
+    height: 300px;
+  }
+
+  .judul h1{
+    margin-top: 40px;
+    font-size: 25px;
+  }
+
+  .content1{
+    width: 400px;
+    margin: 50px 40px 50px 40px;
+    flex-wrap: wrap;
+  }
+
+  .text{
+    width: 350px;
+  }
+
+  .content1 .text h1{
+    font-size: 20px;
+    margin: auto;
+  }
+
+  .content1 .text h2{
+    font-size: 28px;
+    margin-top: 1px;
+  }
+
+  .content1 .text p{
+    font-size: 15px;
+  }
+
+  .content1 .foto img{
+    width: 350px;
+    height: auto;
+  }
+
+  .content2{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .text-visi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-visi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-visi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content2 p{
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+
+
+
+  .content3{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-misi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-misi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-misi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content4 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content4 ol{
+    margin-left: -40px;
+  }
+
+  
+  .content4{
+    width:300px;
+    margin: auto;
+    height: auto;
+  }
+
+  .text-budaya{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-budaya h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-budaya h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content3 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content3 ol{
+    margin-left: -40px;
+  }
+
+  .content5{
+    margin: auto;
+
+  }
+
+  .content5 h1{
+    font-size: 30px;
+    padding: 0;
+    margin: 0px 0px 50px 50px;
+  }
+
+  .content5 button{
+    margin: 0px 0px 0px 50px;
+  }
+
+  .footer-section{
+    height: auto;
+    margin: auto;
+    padding: 0;
+    width: auto;
+}
+.content-footer{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-content .icon{
+    text-align: center;
+    margin: auto;
+}
+.sub-content{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.icon i{
+    font-size: 20px;
+}
+.icon h1{
+    font-size: 20px;
+}
+
+.sub-content p{
+    font-size: 15px;
+}
+
+
+}
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+  .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position below the toggle button */
+      left: 85%;
+      transform: translateX(-50%); /* Centers the menu horizontally */
+      background-color: #fff;
+      width: 200px; /* Adjust width to your needs */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-left: 10px;
+      overflow: hidden; /* Hide overflowing content */
+      max-height: 0; /* Set initial height to 0 for animation */
+      transition: max-height 1s ease-out; /* Transition for smooth animation */
+  }
+
+  .navbar-right {
+      display: none;
+  }
+
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(50deg, #059212 68%, #fff 65%);
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+  }
+
+  .navbar-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+      color: #059212;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+      max-height: 300px;
+  }
+
+  /* Menu item container (li) */
+  .navbar-menu li {
+      display: flex; /* Use flexbox to center contents */
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      height: 60px; /* Adjust height to your needs */
+      width: 100%; /* Make sure li takes full width */
+  }
+
+  /* Link styling (a) */
+  .navbar-menu li a {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Horizontally centers text */
+      align-items: center; /* Vertically centers text */
+      width: 100%; /* Makes sure link spans the entire list item */
+      padding: 8px;
+      font-size: 20px;
+      text-align: center;
+      margin-right: 30px;
+  }
+
+
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 70px;
+      height: 70px; /* Atur tinggi logo sesuai kebutuhan */
+      margin-right: 10px;
+      border-radius: 10px;
+  }
+  
+  .logo-text h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 30px;
+  }
+  
+  .logo-text p {
+      margin: 0;
+      color: #ddd;
+      font-size: 20px;
+  }
+
+  
+  
+  .judul{
+    height: 400px;
+  }
+
+  .judul h1{
+    margin-top: 40px;
+    font-size: 30px;
+  }
+
+  .content1{
+    width: 600px;
+    margin: 60px 60px 80px 60px;
+    flex-wrap: wrap;
+  }
+
+  .text{
+    width: 600px;
+  }
+
+  .content1 .text h1{
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .content1 .text h2{
+    font-size: 40px;
+    margin-top: 1px;
+  }
+
+  .content1 .text p{
+    font-size: 20px;
+  }
+
+  .content1 .foto img{
+    width: 600px;
+    height: auto;
+  }
+
+  .content2{
+    width:600px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-visi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-visi h2{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-visi h1{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content2 p{
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+
+
+  .content3{
+    width:600px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-misi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-misi h2{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-misi h1{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+
+  .content4 ol li{
+    text-align: start;
+    width: 500px;
+    font-size: 10px;
+    margin-left: 70px;
+  }
+
+  .content4 ol{
+    margin-left: -40px;
+  }
+
+  
+  .content4{
+    width:600px;
+    margin: auto;
+    height: auto;
+  }
+
+  .text-budaya{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-budaya h2{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-budaya h1{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content3 ol li{
+    text-align: start;
+    width: 500px;
+    font-size: 10px;
+  }
+
+  .content3 ol{
+    margin-left: -20px;
+  }
+
+  .content5{
+    margin: auto;
+
+  }
+
+  .content5 h1{
+    font-size: 40px;
+    padding: 0;
+    margin: 0px 0px 50px 70px;
+  }
+
+  .content5 button{
+    margin: 0px 0px 0px 70px;
+  }
+
+  .footer-section{
+    height: auto;
+    margin: auto;
+    padding: 0;
+    width: auto;
+}
+.content-footer{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-content .icon{
+    text-align: center;
+    margin: auto;
+}
+.sub-content{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.icon i{
+    font-size: 20px;
+}
+.icon h1{
+    font-size: 20px;
+}
+
+.sub-content p{
+    font-size: 15px;
+}
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  
+}
+
+@media screen and (min-width: 1921px) {
+  
+}

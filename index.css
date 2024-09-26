@@ -1,0 +1,1521 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(45deg, #059212 25%, #fff 25%); /* Warna pertama 20%, warna kedua 80% */
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 60px; /* Atur tinggi logo sesuai kebutuhan */
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.logo-text h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.logo-text p {
+    margin: 0;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #059212;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-menu li a:hover{
+    border-bottom: 2px solid #059212;
+}
+
+.navbar-right .bj {
+    background-color: #059212;
+    padding: 26px 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.navbar-right .bj:hover {
+    background-color: #fff;
+    color: #059212;
+    border-color: #059212;
+    border-style: solid;
+}
+
+.navbar-menu a.active {
+    color: #059212; /* Warna teks saat aktif */
+    font-weight: bold; /* Teks tebal */
+    border-bottom: 2px solid #059212; /* Garis bawah saat aktif */
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.profil:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+
+.slider {
+    position: relative;
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.slides {
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+
+.caption {
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.caption h2 {
+    margin: 250px 100px 0px 150px;
+    font-size: 40px;
+    font-weight:bold;
+
+}
+
+.caption p {
+    font-weight: 200;
+    margin: 0px 100px 0px 150px;
+    font-size: 18px;
+    width: 1000px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #059212B3; /* Warna hijau dengan 70% opacity */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.prev{
+    left: 4%;
+}
+.next {
+    right: 10%;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    position: absolute;
+    border-radius: 50px
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #059212;
+}
+
+
+.text {
+    margin-left: 50px;
+}
+.text h1{
+    font-size: 20px;
+    font-weight: bold;
+    color:#059212;
+}
+
+.text p{
+    font-size: 17px;
+    text-align:initial;
+    margin-right: 100px;
+}
+
+
+
+.content{
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.content p{
+    font-size: 17px;
+}
+
+.content img{
+    height: 600px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.text{
+    width: 700px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2rem;
+}
+.text2{
+    display: flex;
+}
+
+.text2 p{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+
+.text button {
+    padding: 16px;
+    margin-top: 35px;
+    color: #059212;
+    border-color: #059212;
+    background-color: #fff;
+    border-style: solid;
+}
+
+.text button:hover{
+    background-color: #059212;
+    color: #fff;
+    border: solid #059212 2px;
+}
+
+
+
+
+
+.layanan{
+    margin-bottom: 200px;
+    height: 600px;
+}
+
+.text-layanan h1{
+    margin-top: 200px;
+    font-size: 25px;
+    text-align: center;
+
+
+}
+
+.text-layanan p{
+    font-size: 20px;
+    margin: -10px 0px 100px 0px;
+    text-align: center;
+}
+
+.jasa-layanan{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.content-jasa{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.content-jasa .icon{
+    border: 3px solid #059212;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+}
+
+.content-jasa h3{
+    margin: 30px 0px 20px 0px;
+    text-align: center;
+}
+
+.content-jasa img{
+    width: 300px;
+    justify-content: center;
+}
+
+
+.content-jasa p{
+    text-align: center;
+    width: 300px;
+}
+
+
+.text3{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 900px;
+    /* border: 2px solid #059212;
+    border-radius: 5px; */
+    padding: 15px;
+}
+
+.text3 h2{
+    font-weight: 700;
+    color: #059212;
+}
+
+.text3 p{
+    font-size: 20px;
+}
+
+
+
+
+.content2{
+    margin: 200px 200px 50px 200px;
+    background: linear-gradient(0deg, #fff 30%, #059212 30%);
+    width: 1100px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.content2 h1{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: -50px;
+}
+
+.content2 #p{
+    color: #fff; 
+    padding: 56px;
+    width: 1000px;
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: -50px;
+    height: auto;
+}
+.content2 p{
+    color: #059212;
+    text-align: center;
+    margin-top: -70px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 16px;
+}
+
+
+.flex-content2{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    gap: 1rem;
+
+}
+
+
+.flex-content2 h1{
+    font-size: 50px;
+    margin-top: -30px;
+    
+}
+
+.child {
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 250px;
+    background-color: #F3FF90;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
+
+.child h1{
+    color: #059212;
+    
+}
+
+
+.flex-content2 p{
+    font-size: 16px;
+}
+
+
+
+.container1 {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    margin-left: 170px;
+    margin-bottom: 200px;
+}
+
+.container1 p{
+    font-size: 30px;
+    margin-top: -10px;
+    font-weight: 700;
+}
+h1 {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 700;
+    color: #059212;
+
+}
+
+
+
+.categories {
+    text-align: start;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.btn-category {
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 15px;
+    margin-left: -0.1px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-category:hover {
+    background-color: #059212;
+    color: #fff;
+    background-color: #059212
+   }
+
+.btn-category.active {
+    background-color: #059212;
+    color: #fff;
+    border-color: #059212;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: start;
+}
+
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #059212;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.lokasi {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.lokasi svg {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.lokasi p{
+    font-size: 15px;
+    margin-top: 1px;
+    color: #fff;
+
+}
+
+.product-item h1 {
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: 30px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.products button{
+    width: 150px;
+    height: 50px;
+    padding: 1px 1px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    background-color: #9BEC00;
+    color: #fff;
+    border-style: hidden;
+    border-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.products button:hover{
+    background-color: #fff;
+    color: #9BEC00;
+}
+
+
+
+.footer-section{
+    color: #f2f2f2;
+    background-color: #059212;
+    height: 200px;
+}
+
+.content-footer{
+    padding: 20px;
+    margin: 100px 200px 100px 200px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+
+}
+
+.sub-content{
+    margin-top: 30px;
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.icon i{
+    color: #9BEC00;
+    font-size: 30px;
+}
+.icon h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below the toggle button */
+        left: 85%;
+        transform: translateX(-50%); /* Centers the menu horizontally */
+        background-color: #fff;
+        width: 150px; /* Adjust width to your needs */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        overflow: hidden; /* Hide overflowing content */
+        max-height: 0; /* Set initial height to 0 for animation */
+        transition: max-height 1s ease-out; /* Transition for smooth animation */
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(45deg, #059212 65%, #fff 15%);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #059212;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        max-height: 300px;
+    }
+
+    /* Menu item container (li) */
+    .navbar-menu li {
+        display: flex; /* Use flexbox to center contents */
+        align-items: center; /* Vertically centers content */
+        justify-content: center; /* Horizontally centers content */
+        height: 30px; /* Adjust height to your needs */
+        width: 100%; /* Make sure li takes full width */
+    }
+
+    /* Link styling (a) */
+    .navbar-menu li a {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Horizontally centers text */
+        align-items: center; /* Vertically centers text */
+        width: 80%; /* Makes sure link spans the entire list item */
+        padding: 8px;
+        font-size: 10px;
+        text-align: center;
+        margin-right: 50px;
+    }
+
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 30px;
+        height: 30px; /* Atur tinggi logo sesuai kebutuhan */
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    .logo-text h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .logo-text p {
+        margin: 0;
+        color: #ddd;
+        font-size: 10px;
+    }
+
+    .slide{
+        height: 300px;
+        margin: auto;
+    }
+
+    .slider{
+        margin-bottom: -100px;
+    }
+
+    .caption{
+        width: auto;
+        margin: 0;
+    }
+    .caption h2 {
+        width: 280px;
+        margin: 130px 0px 0px 40px;
+        font-size: 15px;
+    }
+
+    .caption p{
+        font-size: 7px;
+        width: 250px;
+        margin: 0px 0px 0px 40px;
+    }
+    .prev, .next{
+        height: 30px;
+        width: 30px;
+        margin-top: 40px;
+    }
+
+    .prev{
+        margin-left: -5px;
+    }
+    
+    .next{
+        margin-right: 0px;
+    }
+
+    .layanan {
+        margin-top: -150px;
+    }
+
+    .text-layanan{
+        margin: auto;
+        width: 300px;
+        margin-bottom: -60px;
+    }
+    .text-layanan h1{
+        font-size: 20px;
+    }
+
+    .text-layanan p{
+        font-size: 15px;
+    }
+
+    .content-jasa{
+        width: 300px;
+    }
+
+    .icon{
+        height: 30px;
+        width: 20px;
+    }
+
+    .content-jasa h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .content-jasa p{
+        font-size: 15px;
+    }
+
+    .text3{
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .text3 h2{
+        font-size: 20px;
+    }
+
+    .text3 p{
+        font-size: 15px;
+    }
+
+    .content{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+
+    }
+
+    .content img{
+        width: 250px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .text{
+        width: 300px;
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+    .text h1{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .text h2{
+        font-size: 20px;
+        margin-right: 12px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .text2 p{
+        font-size: 10px;
+    }
+
+    .text2 svg{
+        width: 20px;
+        margin-top: -5px;
+    }
+
+    #pp{
+        width: 280px;
+    }
+
+    .content button{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .content2{
+        margin-top: 50px;
+        margin: auto;
+        width: 300px;
+        margin-bottom: 300px;
+    }
+
+    .content2 #p{
+        width: 300px;
+        height: 150px;
+        font-size: 15px;
+        text-align: center;
+        padding: 16px;
+        margin-bottom: 0;
+    }
+
+    .child{
+        margin: auto;
+        width: 220px;
+        height: 100px;
+    }
+
+    .child h1{
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+
+    .flex-content2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .footer-section{
+        height: auto;
+        margin: auto;
+        padding: 0;
+        width: auto;
+    }
+    .content-footer{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .sub-content .icon{
+        text-align: center;
+        margin: auto;
+    }
+    .sub-content{
+        text-align: center;
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .icon i{
+        font-size: 20px;
+    }
+    .icon h1{
+        font-size: 20px;
+    }
+
+    .sub-content p{
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below the toggle button */
+        left: 85%;
+        transform: translateX(-50%); /* Centers the menu horizontally */
+        background-color: #fff;
+        width: 180px; /* Adjust width to your needs */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        overflow: hidden; /* Hide overflowing content */
+        max-height: 0; /* Set initial height to 0 for animation */
+        transition: max-height 1s ease-out; /* Transition for smooth animation */
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(50deg, #059212 68%, #fff 65%);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        color: #059212;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        max-height: 300px;
+    }
+
+    /* Menu item container (li) */
+    .navbar-menu li {
+        display: flex; /* Use flexbox to center contents */
+        align-items: center; /* Vertically centers content */
+        justify-content: center; /* Horizontally centers content */
+        height: 40px; /* Adjust height to your needs */
+        width: 100%; /* Make sure li takes full width */
+    }
+
+    /* Link styling (a) */
+    .navbar-menu li a {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Horizontally centers text */
+        align-items: center; /* Vertically centers text */
+        width: 100%; /* Makes sure link spans the entire list item */
+        padding: 8px;
+        font-size: 15px;
+        text-align: center;
+        margin-right: 50px;
+    }
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    .logo-text h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .logo-text p {
+        margin: 0;
+        color: #ddd;
+        font-size: 15px;
+        width: 200px;
+    }
+    .slide{
+        height: 400px;
+        margin: auto;
+    }
+
+    .slider{
+        margin-bottom: -100px;
+    }
+
+    .caption{
+        width: auto;
+        margin: 0;
+    }
+    .caption h2 {
+        width: 300px;
+        margin: 200px 0px 0px 50px;
+        font-size: 15px;
+    }
+
+    .caption p{
+        font-size: 7px;
+        width: 250px;
+        margin: 0px 0px 0px 50px;
+    }
+    .prev, .next{
+        height: 40px;
+        width: 40px;
+        margin-top: 60px;
+    }
+
+    .prev{
+        margin-left: -5px;
+    }
+    
+    .next{
+        margin-right: 0px;
+    }
+
+    .layanan {
+        margin-top: -150px;
+    }
+
+    .text-layanan{
+        margin: auto;
+        width: 300px;
+        margin-bottom: -60px;
+    }
+    .text-layanan h1{
+        font-size: 20px;
+    }
+
+    .text-layanan p{
+        font-size: 15px;
+    }
+
+    .content-jasa{
+        width: 300px;
+    }
+
+    .icon{
+        height: 30px;
+        width: 20px;
+    }
+
+    .content-jasa h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .content-jasa p{
+        font-size: 15px;
+    }
+
+    .text3{
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .text3 h2{
+        font-size: 20px;
+    }
+
+    .text3 p{
+        font-size: 15px;
+    }
+
+    .content{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+
+    }
+
+    .content img{
+        width: 250px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .text{
+        width: 300px;
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+    .text h1{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .text h2{
+        font-size: 20px;
+        margin-right: 12px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .text2 p{
+        font-size: 10px;
+    }
+
+    .text2 svg{
+        width: 20px;
+        margin-top: -5px;
+    }
+
+    #pp{
+        width: 280px;
+    }
+
+    .content button{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .content2{
+        margin-top: 50px;
+        margin: auto;
+        width: 300px;
+        margin-bottom: 300px;
+    }
+
+    .content2 #p{
+        width: 300px;
+        height: 150px;
+        font-size: 15px;
+        text-align: center;
+        padding: 16px;
+        margin-bottom: 0;
+    }
+
+    .child{
+        margin: auto;
+        width: 220px;
+        height: 100px;
+    }
+
+    .child h1{
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+
+    .flex-content2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .footer-section{
+        height: auto;
+        margin: auto;
+        padding: 0;
+        width: auto;
+    }
+    .content-footer{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .sub-content .icon{
+        text-align: center;
+        margin: auto;
+    }
+    .sub-content{
+        text-align: center;
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .icon i{
+        font-size: 20px;
+    }
+    .icon h1{
+        font-size: 20px;
+    }
+
+    .sub-content p{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below the toggle button */
+        left: 85%;
+        transform: translateX(-50%); /* Centers the menu horizontally */
+        background-color: #fff;
+        width: 200px; /* Adjust width to your needs */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-left: 10px;
+        overflow: hidden; /* Hide overflowing content */
+        max-height: 0; /* Set initial height to 0 for animation */
+        transition: max-height 1s ease-out; /* Transition for smooth animation */
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(50deg, #059212 68%, #fff 65%);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        color: #059212;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        max-height: 300px;
+    }
+
+    /* Menu item container (li) */
+    .navbar-menu li {
+        display: flex; /* Use flexbox to center contents */
+        align-items: center; /* Vertically centers content */
+        justify-content: center; /* Horizontally centers content */
+        height: 60px; /* Adjust height to your needs */
+        width: 100%; /* Make sure li takes full width */
+    }
+
+    /* Link styling (a) */
+    .navbar-menu li a {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Horizontally centers text */
+        align-items: center; /* Vertically centers text */
+        width: 100%; /* Makes sure link spans the entire list item */
+        padding: 8px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 70px;
+        height: 70px; /* Atur tinggi logo sesuai kebutuhan */
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    .logo-text h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    .logo-text p {
+        margin: 0;
+        color: #ddd;
+        font-size: 20px;
+    }
+    .slide{
+        height: 600px;
+        margin: auto;
+    }
+
+    .slider{
+        margin-bottom: -100px;
+    }
+
+    .caption{
+        width: auto;
+        margin: 0;
+    }
+    .caption h2 {
+        width: 550px;
+        margin: 200px 0px 0px 90px;
+        font-size: 30px;
+    }
+
+    .caption p{
+        font-size: 15px;
+        width: 500px;
+        margin: 0px 0px 0px 90px;
+    }
+    .prev, .next{
+        height: 60px;
+        width: 60px;
+        margin-top: 60px;
+    }
+
+    .prev{
+        margin-left: -5px;
+    }
+    
+    .next{
+        margin-right: 10px;
+    }
+
+    .layanan {
+        margin-top: -150px;
+    }
+
+    .text-layanan{
+        margin: auto;
+        width: 600px;
+        margin-bottom: -60px;
+    }
+    .text-layanan h1{
+        font-size: 25px;
+    }
+
+    .text-layanan p{
+        font-size: 35px;
+    }
+
+    .content-jasa{
+        width: 300px;
+    }
+
+    .icon{
+        height: 30px;
+        width: 20px;
+    }
+
+    .content-jasa h3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .content-jasa p{
+        font-size: 20px;
+    }
+
+    .text3{
+        margin-top: 20px;
+        width: 600px;
+    }
+
+    .text3 h2{
+        font-size: 25px;
+    }
+
+    .text3 p{
+        font-size: 35px;
+    }
+
+    .content{
+        width:600px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+
+    }
+
+    .content img{
+        width: 500px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .text{
+        width: 500px;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+    .text h1{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .text h2{
+        font-size: 30px;
+        margin-right: 12px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .text2 p{
+        font-size: 10px;
+    }
+
+    .text2 svg{
+        width: 20px;
+        margin-top: -5px;
+    }
+
+    #pp{
+        width: 500px;
+    }
+
+    .content button{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .content2{
+        margin-top: 50px;
+        margin: auto;
+        width: 300px;
+        margin-bottom: 300px;
+    }
+
+    .content2 #p{
+        width: 300px;
+        height: 150px;
+        font-size: 15px;
+        text-align: center;
+        padding: 16px;
+        margin-bottom: 0;
+    }
+
+    .child{
+        margin: auto;
+        width: 220px;
+        height: 100px;
+    }
+
+    .child h1{
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+
+    .flex-content2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .footer-section{
+        height: auto;
+        margin: auto;
+        padding: 0;
+        width: auto;
+    }
+    .content-footer{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .sub-content .icon{
+        text-align: center;
+        margin: auto;
+    }
+    .sub-content{
+        text-align: center;
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .icon i{
+        font-size: 20px;
+    }
+    .icon h1{
+        font-size: 20px;
+    }
+
+    .sub-content p{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+}
+
+@media screen and (min-width: 1921px) {
+    
+}

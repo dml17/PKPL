@@ -1,0 +1,1454 @@
+* {
+    font-family: Nunito, sans-serif;
+  }
+  
+
+
+
+  * {
+    box-sizing: border-box;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+  
+    background-color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(45deg, #059212 25%, #fff 25%); /* Warna pertama 20%, warna kedua 80% */
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 60px; /* Atur tinggi logo sesuai kebutuhan */
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  
+  .logo-text h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo-text p {
+    margin: 0;
+    color: #ddd;
+    font-size: 14px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-menu li {
+    margin: 0 15px;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #059212;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar-menu li a:hover{
+    border-bottom: 2px solid #059212;
+  }
+  
+  .navbar-right .bj {
+    background-color: #059212;
+    padding: 26px 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .navbar-right .bj:hover {
+    background-color: #fff;
+    color: #059212;
+    border-color: #059212;
+    border-style: solid;
+  }
+  
+  .navbar-menu a.active {
+    color: #059212; /* Warna teks saat aktif */
+    font-weight: bold; /* Teks tebal */
+    border-bottom: 2px solid #059212; /* Garis bawah saat aktif */
+  }
+  
+  
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .profil:hover .dropdown-content{
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  
+  
+  
+  
+  .judul {
+      position: relative;
+      width: 100%;
+      height: 450px; /* Atur tinggi sesuai kebutuhan */
+      overflow: hidden; /* Agar gambar yang melebihi tinggi terpotong */
+  }
+  
+  .judul img {
+      image-rendering: auto;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Memotong gambar sesuai dengan area elemen */
+  }
+  
+  .text-overlay {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Background semi-transparan */
+      color: white;
+      display: flex;
+      justify-content: center; /* Memusatkan teks secara horizontal */
+      align-items: center; /* Memusatkan teks secara vertikal */
+      text-align: center;
+      border-radius: 5px; /* Opsional: Menambahkan efek melengkung pada sudut */
+  }
+  
+  .text-overlay h1{
+      font-weight: 900;
+      font-size: 40px;
+  }
+  
+  .alur-layanan{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  
+  .alur-layanan h1{
+    margin-bottom: 50px;
+    color: #059212;
+    font-weight: bold;
+  }
+  
+  .alur{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .alur-client{
+    display: flex;
+    color: #fff;
+    margin-top: 10px;
+    width: 550px;
+    height: 80px;
+  }
+  
+  .text1{
+    border-radius: 0px 5px 5px 0px;
+    border: 2px #059212 solid;
+    width: 600px;
+    text-align: start;
+  }
+  .alur-client h2{
+    color: #24262b;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+  
+  }
+  .icon1{
+    background-color: #059212;
+    border-radius: 5px 0px 0px 5px;
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+  }
+  .footer-section{
+    color: #f2f2f2;
+    background-color: #059212;
+    height: 200px;
+  }
+  
+  .content-footer{
+    padding: 20px;
+    margin: 100px 200px 100px 200px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  
+  }
+  
+  .sub-content{
+    margin-top: 30px;
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .icon{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .icon i{
+    color: #9BEC00;
+    font-size: 30px;
+  }
+  .icon h1{
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  
+  .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: space-evenly;
+  }
+  
+  .team-head-text {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .team-head-text {
+    line-height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  
+  .container {
+    max-width: 1380px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
+  
+  .card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+  }
+  
+  .card-container {
+    width: 280px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+  
+  .name{
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #059212;
+  }
+  
+  .position {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  
+  .feature-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    color: rgb(122, 122, 122);
+    line-height: 30px;
+  }
+  
+  .social-icons {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team-image-wrapper {
+    clip-path: circle(50% at 50% 50%);
+    width: 130px;
+    height: 130px;
+  }
+  
+  .team-member-image {
+    max-width: 100%;
+    
+  }
+  
+  @media (max-width: 500px) {
+    .card-container {
+      width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 25px;
+      margin-left: 0px;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wk-desk-1 {
+  width: 8.333333%;
+}
+
+.wk-desk-2 {
+  width: 16.666667%;
+}
+
+.wk-desk-3 {
+  width: 25%;
+}
+
+.wk-desk-4 {
+  width: 33.333333%;
+}
+
+.wk-desk-5 {
+  width: 41.666667%;
+}
+
+.wk-desk-6 {
+  width: 50%;
+}
+
+.wk-desk-7 {
+  width: 58.333333%;
+}
+
+.wk-desk-8 {
+  width: 66.666667%;
+}
+
+.wk-desk-9 {
+  width: 75%;
+}
+
+.wk-desk-10 {
+  width: 83.333333%;
+}
+
+.wk-desk-11 {
+  width: 91.666667%;
+}
+
+.wk-desk-12 {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wk-ipadp-1 {
+    width: 8.333333%;
+  }
+
+  .wk-ipadp-2 {
+    width: 16.666667%;
+  }
+
+  .wk-ipadp-3 {
+    width: 25%;
+  }
+
+  .wk-ipadp-4 {
+    width: 33.333333%;
+  }
+
+  .wk-ipadp-5 {
+    width: 41.666667%;
+  }
+
+  .wk-ipadp-6 {
+    width: 50%;
+  }
+
+  .wk-ipadp-7 {
+    width: 58.333333%;
+  }
+
+  .wk-ipadp-8 {
+    width: 66.666667%;
+  }
+
+  .wk-ipadp-9 {
+    width: 75%;
+  }
+
+  .wk-ipadp-10 {
+    width: 83.333333%;
+  }
+
+  .wk-ipadp-11 {
+    width: 91.666667%;
+  }
+
+  .wk-ipadp-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wk-tab-1 {
+    width: 8.333333%;
+  }
+
+  .wk-tab-2 {
+    width: 16.666667%;
+  }
+
+  .wk-tab-3 {
+    width: 25%;
+  }
+
+  .wk-tab-4 {
+    width: 33.333333%;
+  }
+
+  .wk-tab-5 {
+    width: 41.666667%;
+  }
+
+  .wk-tab-6 {
+    width: 50%;
+  }
+
+  .wk-tab-7 {
+    width: 58.333333%;
+  }
+
+  .wk-tab-8 {
+    width: 66.666667%;
+  }
+
+  .wk-tab-9 {
+    width: 75%;
+  }
+
+  .wk-tab-10 {
+    width: 83.333333%;
+  }
+
+  .wk-tab-11 {
+    width: 91.666667%;
+  }
+
+  .wk-tab-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wk-mobile-1 {
+    width: 8.333333%;
+  }
+
+  .wk-mobile-2 {
+    width: 16.666667%;
+  }
+
+  .wk-mobile-3 {
+    width: 25%;
+  }
+
+  .wk-mobile-4 {
+    width: 33.333333%;
+  }
+
+  .wk-mobile-5 {
+    width: 41.666667%;
+  }
+
+  .wk-mobile-6 {
+    width: 50%;
+  }
+
+  .wk-mobile-7 {
+    width: 58.333333%;
+  }
+
+  .wk-mobile-8 {
+    width: 66.666667%;
+  }
+
+  .wk-mobile-9 {
+    width: 75%;
+  }
+
+  .wk-mobile-10 {
+    width: 83.333333%;
+  }
+
+  .wk-mobile-11 {
+    width: 91.666667%;
+  }
+
+  .wk-mobile-12 {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position below the toggle button */
+      left: 85%;
+      transform: translateX(-50%); /* Centers the menu horizontally */
+      background-color: #fff;
+      width: 150px; /* Adjust width to your needs */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden; /* Hide overflowing content */
+      max-height: 0; /* Set initial height to 0 for animation */
+      transition: max-height 1s ease-out; /* Transition for smooth animation */
+  }
+
+  .navbar-right {
+      display: none;
+  }
+
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(45deg, #059212 65%, #fff 15%);
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+  }
+
+  .navbar-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: #059212;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+      max-height: 300px;
+  }
+
+  /* Menu item container (li) */
+  .navbar-menu li {
+      display: flex; /* Use flexbox to center contents */
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      height: 30px; /* Adjust height to your needs */
+      width: 100%; /* Make sure li takes full width */
+  }
+
+  /* Link styling (a) */
+  .navbar-menu li a {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Horizontally centers text */
+      align-items: center; /* Vertically centers text */
+      width: 80%; /* Makes sure link spans the entire list item */
+      padding: 8px;
+      font-size: 10px;
+      text-align: center;
+      margin-right: 50px;
+  }
+
+
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 30px;
+      height: 30px; /* Atur tinggi logo sesuai kebutuhan */
+      margin-right: 10px;
+      border-radius: 10px;
+  }
+  
+  .logo-text h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+  }
+  
+  .logo-text p {
+      margin: 0;
+      color: #ddd;
+      font-size: 10px;
+  }
+
+  .judul{
+    height: 200px;
+  }
+
+  .judul h1{
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+  .content1{
+    width: 400px;
+    margin: 50px 30px 50px 30px;
+    flex-wrap: wrap;
+  }
+
+  .text{
+    width: 300px;
+  }
+
+  .content1 .text h1{
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .content1 .text h2{
+    font-size: 25px;
+    margin-top: 1px;
+  }
+
+  .content1 .text p{
+    font-size: 15px;
+  }
+
+  .content1 .foto img{
+    width: 300px;
+    height: auto;
+  }
+
+  .content2{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .text-visi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-visi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-visi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content2 p{
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+
+
+
+  .content3{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-misi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-misi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-misi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content4 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content4 ol{
+    margin-left: -40px;
+  }
+
+  
+  .content4{
+    width:300px;
+    margin: auto;
+    height: auto;
+  }
+
+  .text-budaya{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-budaya h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-budaya h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content3 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content3 ol{
+    margin-left: -40px;
+  }
+
+  .content5{
+    margin: auto;
+
+  }
+
+  .content5 h1{
+    font-size: 30px;
+    padding: 0;
+    margin: 0px 0px 50px 50px;
+  }
+
+  .content5 button{
+    margin: 0px 0px 0px 50px;
+  }
+
+  .footer-section{
+    height: auto;
+    margin: auto;
+    padding: 0;
+    width: auto;
+}
+.content-footer{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-content .icon{
+    text-align: center;
+    margin: auto;
+}
+.sub-content{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.icon i{
+    font-size: 20px;
+}
+.icon h1{
+    font-size: 20px;
+}
+
+.sub-content p{
+    font-size: 15px;
+}
+
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+  .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position below the toggle button */
+      left: 85%;
+      transform: translateX(-50%); /* Centers the menu horizontally */
+      background-color: #fff;
+      width: 180px; /* Adjust width to your needs */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden; /* Hide overflowing content */
+      max-height: 0; /* Set initial height to 0 for animation */
+      transition: max-height 1s ease-out; /* Transition for smooth animation */
+  }
+
+  .navbar-right {
+      display: none;
+  }
+
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(50deg, #059212 68%, #fff 65%);
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+  }
+
+  .navbar-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+      color: #059212;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+      max-height: 300px;
+  }
+
+  /* Menu item container (li) */
+  .navbar-menu li {
+      display: flex; /* Use flexbox to center contents */
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      height: 40px; /* Adjust height to your needs */
+      width: 100%; /* Make sure li takes full width */
+  }
+
+  /* Link styling (a) */
+  .navbar-menu li a {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Horizontally centers text */
+      align-items: center; /* Vertically centers text */
+      width: 100%; /* Makes sure link spans the entire list item */
+      padding: 8px;
+      font-size: 15px;
+      text-align: center;
+      margin-right: 50px;
+  }
+
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 50px;
+      height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+      margin-right: 10px;
+      border-radius: 10px;
+  }
+  
+  .logo-text h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+  }
+  
+  .logo-text p {
+      margin: 0;
+      color: #ddd;
+      font-size: 15px;
+      width: 200px;
+  }
+
+  
+  .judul{
+    height: 300px;
+  }
+
+  .judul h1{
+    margin-top: 40px;
+    font-size: 25px;
+  }
+
+  .content1{
+    width: 400px;
+    margin: 50px 40px 50px 40px;
+    flex-wrap: wrap;
+  }
+
+  .text{
+    width: 350px;
+  }
+
+  .content1 .text h1{
+    font-size: 20px;
+    margin: auto;
+  }
+
+  .content1 .text h2{
+    font-size: 28px;
+    margin-top: 1px;
+  }
+
+  .content1 .text p{
+    font-size: 15px;
+  }
+
+  .content1 .foto img{
+    width: 350px;
+    height: auto;
+  }
+
+  .content2{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .text-visi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-visi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-visi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content2 p{
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+
+
+
+  .content3{
+    width:300px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-misi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-misi h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-misi h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content4 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content4 ol{
+    margin-left: -40px;
+  }
+
+  
+  .content4{
+    width:300px;
+    margin: auto;
+    height: auto;
+  }
+
+  .text-budaya{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-budaya h2{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-budaya h1{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content3 ol li{
+    text-align: start;
+    width: 250px;
+    font-size: 10px;
+  }
+
+  .content3 ol{
+    margin-left: -40px;
+  }
+
+  .content5{
+    margin: auto;
+
+  }
+
+  .content5 h1{
+    font-size: 30px;
+    padding: 0;
+    margin: 0px 0px 50px 50px;
+  }
+
+  .content5 button{
+    margin: 0px 0px 0px 50px;
+  }
+
+  .footer-section{
+    height: auto;
+    margin: auto;
+    padding: 0;
+    width: auto;
+}
+.content-footer{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-content .icon{
+    text-align: center;
+    margin: auto;
+}
+.sub-content{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.icon i{
+    font-size: 20px;
+}
+.icon h1{
+    font-size: 20px;
+}
+
+.sub-content p{
+    font-size: 15px;
+}
+
+
+}
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+  .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position below the toggle button */
+      left: 85%;
+      transform: translateX(-50%); /* Centers the menu horizontally */
+      background-color: #fff;
+      width: 200px; /* Adjust width to your needs */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-left: 10px;
+      overflow: hidden; /* Hide overflowing content */
+      max-height: 0; /* Set initial height to 0 for animation */
+      transition: max-height 1s ease-out; /* Transition for smooth animation */
+  }
+
+  .navbar-right {
+      display: none;
+  }
+
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(50deg, #059212 68%, #fff 65%);
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+  }
+
+  .navbar-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+      color: #059212;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+      max-height: 300px;
+  }
+
+  /* Menu item container (li) */
+  .navbar-menu li {
+      display: flex; /* Use flexbox to center contents */
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      height: 60px; /* Adjust height to your needs */
+      width: 100%; /* Make sure li takes full width */
+  }
+
+  /* Link styling (a) */
+  .navbar-menu li a {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Horizontally centers text */
+      align-items: center; /* Vertically centers text */
+      width: 100%; /* Makes sure link spans the entire list item */
+      padding: 8px;
+      font-size: 20px;
+      text-align: center;
+      margin-right: 30px;
+  }
+
+
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 70px;
+      height: 70px; /* Atur tinggi logo sesuai kebutuhan */
+      margin-right: 10px;
+      border-radius: 10px;
+  }
+  
+  .logo-text h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 30px;
+  }
+  
+  .logo-text p {
+      margin: 0;
+      color: #ddd;
+      font-size: 20px;
+  }
+
+  
+  
+  .judul{
+    height: 400px;
+  }
+
+  .judul h1{
+    margin-top: 40px;
+    font-size: 30px;
+  }
+
+  .content1{
+    width: 600px;
+    margin: 60px 60px 80px 60px;
+    flex-wrap: wrap;
+  }
+
+  .text{
+    width: 600px;
+  }
+
+  .content1 .text h1{
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .content1 .text h2{
+    font-size: 40px;
+    margin-top: 1px;
+  }
+
+  .content1 .text p{
+    font-size: 20px;
+  }
+
+  .content1 .foto img{
+    width: 600px;
+    height: auto;
+  }
+
+  .content2{
+    width:600px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-visi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-visi h2{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-visi h1{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content2 p{
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+
+
+  .content3{
+    width:600px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .text-misi{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-misi h2{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-misi h1{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+
+  .content4 ol li{
+    text-align: start;
+    width: 500px;
+    font-size: 10px;
+    margin-left: 70px;
+  }
+
+  .content4 ol{
+    margin-left: -40px;
+  }
+
+  
+  .content4{
+    width:600px;
+    margin: auto;
+    height: auto;
+  }
+
+  .text-budaya{
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .text-budaya h2{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .text-budaya h1{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .content3 ol li{
+    text-align: start;
+    width: 500px;
+    font-size: 10px;
+  }
+
+  .content3 ol{
+    margin-left: -20px;
+  }
+
+  .content5{
+    margin: auto;
+
+  }
+
+  .content5 h1{
+    font-size: 40px;
+    padding: 0;
+    margin: 0px 0px 50px 70px;
+  }
+
+  .content5 button{
+    margin: 0px 0px 0px 70px;
+  }
+
+  .footer-section{
+    height: auto;
+    margin: auto;
+    padding: 0;
+    width: auto;
+}
+.content-footer{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-content .icon{
+    text-align: center;
+    margin: auto;
+}
+.sub-content{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.icon i{
+    font-size: 20px;
+}
+.icon h1{
+    font-size: 20px;
+}
+
+.sub-content p{
+    font-size: 15px;
+}
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  
+}
+
+@media screen and (min-width: 1921px) {
+  
+}

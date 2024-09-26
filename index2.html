@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+
+
+    <div class="menu">
+    <div class="login">
+        <h1>Sudah memiliki akun ? langsung klik</h1>
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <div class="register">
+        <h1>Belum punya akun ? Langsung gass klik register</h1>
+        <button id="registerBtn">Register</button>
+        </div>
+</div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            window.location.href = 'login.html'; // Ganti dengan URL halaman login
+        });
+
+        document.getElementById('registerBtn').addEventListener('click', function() {
+            window.location.href = 'register.html'; // Ganti dengan URL halaman registrasi
+        });
+    </script>
+</body>
+</html>

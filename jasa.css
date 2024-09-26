@@ -1,0 +1,914 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(45deg, #059212 25%, #fff 25%); /* Warna pertama 20%, warna kedua 80% */
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 60px; /* Atur tinggi logo sesuai kebutuhan */
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.logo-text h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-text p {
+    margin: 0;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #059212;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-menu li a:hover{
+    border-bottom: 2px solid #059212;
+}
+
+.navbar-right .bj {
+    background-color: #059212;
+    padding: 26px 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.navbar-right .bj:hover {
+    background-color: #fff;
+    color: #059212;
+    border-color: #059212;
+    border-style: solid;
+}
+
+.navbar-menu a.active {
+    color: #059212; /* Warna teks saat aktif */
+    font-weight: bold; /* Teks tebal */
+    border-bottom: 2px solid #059212; /* Garis bawah saat aktif */
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .profil:hover .dropdown-content{
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+
+
+
+.judul {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Atur tinggi sesuai kebutuhan */
+    overflow: hidden; /* Agar gambar yang melebihi tinggi terpotong */
+}
+
+.judul img {
+    image-rendering: auto;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memotong gambar sesuai dengan area elemen */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background semi-transparan */
+    color: white;
+    display: flex;
+    justify-content: center; /* Memusatkan teks secara horizontal */
+    align-items: center; /* Memusatkan teks secara vertikal */
+    text-align: center;
+    border-radius: 5px; /* Opsional: Menambahkan efek melengkung pada sudut */
+}
+
+.text-overlay h1{
+    font-weight: 900;
+}
+
+.content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content h1{
+    margin: 50px 100px 20px 100px;
+    color:#059212;
+    font-style:initial;
+    font-weight: bold;
+}
+
+/* .content p{
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 1px;
+} */
+
+.sub-content{
+    margin: 100px 200px 100px 200px;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.image img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+#text{
+    margin-top: -50px;
+}
+
+
+.alur-layanan{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.alur{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.alur-client{
+    display: flex;
+    color: #fff;
+    margin-top: 10px;
+    width: 550px;
+    height: 80px;
+}
+
+.text1{
+    border-radius: 0px 5px 5px 0px;
+    border: 2px #059212 solid;
+    width: 600px;
+    text-align: start;
+}
+.alur-client h2{
+    color: #24262b;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.icon{
+    background-color: #059212;
+    border-radius: 5px 0px 0px 5px;
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+}
+
+
+
+
+.footer-section{
+    color: #f2f2f2;
+    background-color: #059212;
+    height: 200px;
+}
+
+.content-footer{
+    padding: 20px;
+    margin: 100px 200px 100px 200px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.sub-content2{
+    margin-top: -72px;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.sub-content2 p{
+    text-align:center;
+}
+
+.icon1{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.icon1 i{
+    color: #9BEC00;
+    font-size: 30px;
+}
+.icon1 h4{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below the toggle button */
+        left: 85%;
+        transform: translateX(-50%); /* Centers the menu horizontally */
+        background-color: #fff;
+        width: 150px; /* Adjust width to your needs */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        overflow: hidden; /* Hide overflowing content */
+        max-height: 0; /* Set initial height to 0 for animation */
+        transition: max-height 1s ease-out; /* Transition for smooth animation */
+    }
+  
+    .navbar-right {
+        display: none;
+    }
+  
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(45deg, #059212 65%, #fff 15%);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+  
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #059212;
+    }
+  
+    .navbar-menu.active {
+        display: flex;
+        max-height: 300px;
+    }
+  
+    /* Menu item container (li) */
+    .navbar-menu li {
+        display: flex; /* Use flexbox to center contents */
+        align-items: center; /* Vertically centers content */
+        justify-content: center; /* Horizontally centers content */
+        height: 30px; /* Adjust height to your needs */
+        width: 100%; /* Make sure li takes full width */
+    }
+  
+    /* Link styling (a) */
+    .navbar-menu li a {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Horizontally centers text */
+        align-items: center; /* Vertically centers text */
+        width: 80%; /* Makes sure link spans the entire list item */
+        padding: 8px;
+        font-size: 10px;
+        text-align: center;
+        margin-right: 50px;
+    }
+  
+  
+  
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 30px;
+        height: 30px; /* Atur tinggi logo sesuai kebutuhan */
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    .logo-text h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .logo-text p {
+        margin: 0;
+        color: #ddd;
+        font-size: 10px;
+    }
+  
+    .judul{
+      height: 200px;
+    }
+  
+    .judul h1{
+      margin-top: 40px;
+      font-size: 20px;
+      width: 300px;
+    }
+ 
+
+    .content{
+        width: 300px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .sub-content{
+        width: 300px;
+        margin: auto;
+    }
+
+    .sub-content img{
+        width: 120px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .sub-content h1{
+        margin: 10px 20px 10px 20px;
+        font-size: 25px;
+    }
+
+    .sub-content p{
+        font-size: 15px;
+        margin-bottom: 50px
+    }
+
+   #text{
+        margin: auto;
+    }
+
+    .alur-layanan{
+        width: 300px;
+    }
+
+    .alur-layanan h1{
+        font-size: 30px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .alur{
+        margin-top: 30px;
+    }
+    .alur-client{
+        width: 300px;
+    }
+
+    .alur-client h2{
+        font-size: 20px;
+        width: 200px;
+        margin: 12px 10px 10px 15px;
+    }
+
+
+
+
+    .footer-section{
+    margin: 0px -30px 0px -30px;
+     height: auto;
+      margin-top: 50px;
+      padding: 0;
+      width: auto;
+  }
+  .content-footer{
+      flex-wrap: wrap;
+      gap: 2rem;
+      text-align: center;
+      width: 300px;
+      margin: auto;
+      text-align: center;
+  }
+  
+  .sub-content2 .icon1{
+      text-align: center;
+      margin: auto;
+  }
+  .sub-content2{
+      text-align: center;
+      width: 300px;
+      margin: auto;
+      margin-bottom: 0;
+  }
+  
+  .icon1 i{
+      font-size: 20px;
+  }
+  .icon1 h4{
+      font-size: 20px;
+  }
+  
+  .sub-content2 p{
+      font-size: 15px;
+  }
+  
+  
+  }
+
+
+
+
+  
+  @media screen and (min-width: 401px) and (max-width: 720px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below the toggle button */
+        left: 85%;
+        transform: translateX(-50%); /* Centers the menu horizontally */
+        background-color: #fff;
+        width: 180px; /* Adjust width to your needs */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        overflow: hidden; /* Hide overflowing content */
+        max-height: 0; /* Set initial height to 0 for animation */
+        transition: max-height 1s ease-out; /* Transition for smooth animation */
+    }
+  
+    .navbar-right {
+        display: none;
+    }
+  
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(50deg, #059212 68%, #fff 65%);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+  
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        color: #059212;
+    }
+  
+    .navbar-menu.active {
+        display: flex;
+        max-height: 300px;
+    }
+  
+    /* Menu item container (li) */
+    .navbar-menu li {
+        display: flex; /* Use flexbox to center contents */
+        align-items: center; /* Vertically centers content */
+        justify-content: center; /* Horizontally centers content */
+        height: 40px; /* Adjust height to your needs */
+        width: 100%; /* Make sure li takes full width */
+    }
+  
+    /* Link styling (a) */
+    .navbar-menu li a {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Horizontally centers text */
+        align-items: center; /* Vertically centers text */
+        width: 100%; /* Makes sure link spans the entire list item */
+        padding: 8px;
+        font-size: 15px;
+        text-align: center;
+        margin-right: 50px;
+    }
+  
+  
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    .logo-text h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .logo-text p {
+        margin: 0;
+        color: #ddd;
+        font-size: 15px;
+        width: 200px;
+    }
+  
+    
+    .judul{
+      height: 300px;
+    }
+  
+    .judul h1{
+      margin-top: 40px;
+      font-size: 25px;
+    }
+   
+    
+    .content{
+        width: 300px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .sub-content{
+        width: 300px;
+        margin: auto;
+    }
+
+    .sub-content img{
+        width: 120px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .sub-content h1{
+        margin: 10px 20px 10px 20px;
+        font-size: 25px;
+    }
+
+    .sub-content p{
+        font-size: 15px;
+        margin-bottom: 50px
+    }
+
+   #text{
+        margin: auto;
+    }
+
+    .alur-layanan{
+        width: 300px;
+    }
+
+    .alur-layanan h1{
+        font-size: 30px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .alur{
+        margin-top: 30px;
+    }
+    .alur-client{
+        width: 300px;
+    }
+
+    .alur-client h2{
+        font-size: 20px;
+        width: 200px;
+        margin: 12px 10px 10px 15px;
+    }
+
+
+
+
+    .footer-section{
+    margin: 0px -50px 0px -50px;
+     height: auto;
+      margin-top: 50px;
+      padding: 0;
+      width: auto;
+  }
+  .content-footer{
+      flex-wrap: wrap;
+      gap: 2rem;
+      text-align: center;
+      width: 300px;
+      margin: auto;
+      text-align: center;
+  }
+  
+  .sub-content2 .icon1{
+      text-align: center;
+      margin: auto;
+  }
+  .sub-content2{
+      text-align: center;
+      width: 300px;
+      margin: auto;
+      margin-bottom: 0;
+  }
+  
+  .icon1 i{
+      font-size: 20px;
+  }
+  .icon1 h4{
+      font-size: 20px;
+  }
+  
+  .sub-content2 p{
+      font-size: 15px;
+  }
+  
+  
+  }
+  @media screen and (min-width: 721px) and (max-width: 1280px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below the toggle button */
+        left: 85%;
+        transform: translateX(-50%); /* Centers the menu horizontally */
+        background-color: #fff;
+        width: 200px; /* Adjust width to your needs */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-left: 10px;
+        overflow: hidden; /* Hide overflowing content */
+        max-height: 0; /* Set initial height to 0 for animation */
+        transition: max-height 1s ease-out; /* Transition for smooth animation */
+    }
+  
+    .navbar-right {
+        display: none;
+    }
+  
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: linear-gradient(50deg, #059212 68%, #fff 65%);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+  
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        color: #059212;
+    }
+  
+    .navbar-menu.active {
+        display: flex;
+        max-height: 300px;
+    }
+  
+    /* Menu item container (li) */
+    .navbar-menu li {
+        display: flex; /* Use flexbox to center contents */
+        align-items: center; /* Vertically centers content */
+        justify-content: center; /* Horizontally centers content */
+        height: 60px; /* Adjust height to your needs */
+        width: 100%; /* Make sure li takes full width */
+    }
+  
+    /* Link styling (a) */
+    .navbar-menu li a {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Horizontally centers text */
+        align-items: center; /* Vertically centers text */
+        width: 100%; /* Makes sure link spans the entire list item */
+        padding: 8px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 30px;
+    }
+  
+  
+  
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 70px;
+        height: 70px; /* Atur tinggi logo sesuai kebutuhan */
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    .logo-text h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    .logo-text p {
+        margin: 0;
+        color: #ddd;
+        font-size: 20px;
+    }
+  
+    
+    
+    .judul{
+      height: 400px;
+    }
+  
+    .judul h1{
+      margin-top: 40px;
+      font-size: 30px;
+    }
+ 
+    
+    .content{
+        width: 600px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .sub-content{
+        width: 300px;
+        margin: auto;
+    }
+
+    .sub-content img{
+        width: 250px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .sub-content h1{
+        width: 600px;
+        font-size: 35px;
+        margin: 50px 0px 0px -150px;
+    }
+
+    .sub-content p{
+        margin: 0px 0px 0px -100px;
+        font-size: 15px;
+        width: 500px;
+        margin-bottom: 50px
+    }
+
+   #text{
+        margin: auto;
+    }
+
+    .alur-layanan{
+        width: 600px;
+    }
+
+    .alur-layanan h1{
+        font-size: 30px;
+        width: 600px;
+        margin: auto;
+    }
+
+    .alur{
+        margin-top: 30px;
+    }
+    .alur-client{
+        width: 500px;
+    }
+
+    .alur-client h2{
+        font-size: 20px;
+        width: 400px;
+        padding: 10px;
+    }
+
+
+
+
+    .footer-section{
+    margin: 0px -30px 0px -30px;
+     height: auto;
+      margin-top: 50px;
+      padding: 0;
+      width: auto;
+  }
+  .content-footer{
+      flex-wrap: wrap;
+      gap: 2rem;
+      text-align: center;
+      width: 300px;
+      margin: auto;
+      text-align: center;
+  }
+  
+  .sub-content2 .icon1{
+      text-align: center;
+      margin: auto;
+  }
+  .sub-content2{
+      text-align: center;
+      width: 300px;
+      margin: auto;
+      margin-bottom: 0;
+  }
+  
+  .icon1 i{
+      font-size: 20px;
+  }
+  .icon1 h4{
+      font-size: 20px;
+  }
+  
+  .sub-content2 p{
+      font-size: 15px;
+  }
+  
+  
+  
+  }
+  
+  @media screen and (min-width: 1281px) and (max-width: 1440px) {
+    
+  }
+  
+  @media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+  }
+  
+  @media screen and (min-width: 1921px) {
+    
+  }
